@@ -30,6 +30,8 @@ Demo Sites
 
 - [Make Difference](http://lilac-less.hit9.org/), repo: https://github.com/hit9/lilac-theme-less/tree/gh-pages
 
+- [miles](http://mil3s.com/)
+
 Install
 -------
 
