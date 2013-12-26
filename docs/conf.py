@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'lilac'
+project = u'Lilac'
 copyright = u'2013, hit9'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -167,7 +167,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'lilacdoc'
+htmlhelp_basename = 'Lilacdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -186,7 +186,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'lilac.tex', u'lilac Documentation',
+  ('index', 'Lilac.tex', u'Lilac Documentation',
    u'hit9', 'manual'),
 ]
 
@@ -216,7 +216,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'lilac', u'lilac Documentation',
+    ('index', 'Lilac', u'Lilac Documentation',
      [u'hit9'], 1)
 ]
 
@@ -230,8 +230,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'lilac', u'lilac Documentation',
-   u'hit9', 'lilac', 'One line description of project.',
+  ('index', 'Lilac', u'Lilac Documentation',
+   u'hit9', 'Lilac', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -250,4 +250,4 @@ texinfo_documents = [
 
 sys.path.append(os.path.abspath('_themes'))
 html_theme_path = ['_themes']
-html_theme = 'flask_small'
+html_theme = 'rux'

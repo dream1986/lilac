@@ -10,12 +10,13 @@ Thank GitHub, we have a great place to host static blogs.
 
 If you want to learn about Github Pages, head over to `GitHub Pages <http://pages.github.com/>`_.
 
-If you create a repository named `username.github.com` (now it's `username.github.io`), its master
+If you create a repository named ``username.github.com`` (now it's ``username.github.io``), its master
 branch will be served on GitHub Pages.
 
-If you create a branch named `gh-pages` on any repository, this branch will be served on GitHub Pages.
+If you create a branch named ``gh-pages`` on any repository, this branch will be served on GitHub Pages.
 
-GitHub Pages is a static files HTTP server, free to use and no bandwidth limit.
+GitHub Pages is a static files HTTP server, free to use and no bandwidth
+limiting.
 
 Here's a short tutorial to use lilac on github pages.
 
@@ -25,11 +26,11 @@ Here's a short tutorial to use lilac on github pages.
     $ git init
     $ git remote add origin git@github.com:you/you.github.com.git
 
-It's a good habit to ignore trash files::
+It's a good habit to ignore spam files::
 
     $ vim .gitignore
 
-we should add this to `.gitignore`::
+we should add this to ``.gitignore``::
 
     .*.swp
     .*.swo
@@ -47,8 +48,8 @@ It's time to deploy lilac::
 
 I recommend you to add theme as git submodule(need to remove the auto generated theme directory)::
 
-    $ rm classic -rf
-    $ git submodule add git://github.com/hit9/lilac-theme-classic.git classic
+    $ rm less -rf
+    $ git submodule add git://github.com/hit9/lilac-theme-less.git less
 
 You may take a look at :ref:`Quick Start <quickstart>` for customization.
 
@@ -64,9 +65,13 @@ Let's deploy the site to GitHub's Pages::
 
 GitHub will send you an email once your blog is ready.
 
-You can set up a custom domain with github pages, just define a file `CNAME` for your site,
-and write your domain in it(see here: `CNAME <https://github.com/hit9/lilac/blob/gh-pages/CNAME>`_),
-after this, create a CNAME record pointing to `your-github-username.github.io.` on the domain panel, more
+Custom Domain
+-------------
+
+You can set up a custom domain with github pages, just create a file named `CNAME` for your site,
+and write your domain in it(sample: `CNAME <https://github.com/hit9/lilac-website/blob/gh-pages/CNAME>`_).
+
+After this, create a CNAME record pointing to `your-github-username.github.io.` on the domain panel, more
 information is on `github pages help <https://help.github.com/articles/setting-up-a-custom-domain-with-pages>`_.
 
 Host Blog in Sub Directory

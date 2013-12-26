@@ -3,10 +3,10 @@
 The Makefile helper
 ===================
 
-Lilac generate you a `Makefile` to help your managing the blog, let's take an quick overview
+Lilac generate you a ``Makefile`` to help you manage the blog, let's take an quick overview
 on its usage:
 
-Start blogging(start server and auto rebuild)::
+Start blogging(start server and auto rebuilding)::
 
     $ make serve
 

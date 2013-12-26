@@ -10,7 +10,7 @@ Eager to get started? Now this section assumes that you have lilac installed.
 Create a New Blog
 -----------------
 
-You need to create a new directory for your new blog, and then run `lilac deploy` in the empty directory:
+You need to create a new directory for your new blog, and then run ``lilac deploy`` in the empty directory:
 
 .. code-block:: bash
 
@@ -18,15 +18,15 @@ You need to create a new directory for your new blog, and then run `lilac deploy
     $ cd MyBlog
     $ lilac deploy
 
-You may want to run `ls` to see what has happened:
+You may want to run ``ls`` to see what has happened:
 
 .. code-block:: bash
 
     $ ls
     classic  config.toml  Makefile  src  venv
 
-After this step, lilac generates you a sample config file `config.toml`, a sample post
-file `src/post/sample.md`, and the default theme `classic <https://github.com/hit9/lilac-theme-classic>`_.
+After this step, lilac generates you a sample config file ``config.toml``, a sample post
+file ``src/post/sample.md``, and the default theme `classic <https://github.com/hit9/lilac-theme-classic>`_.
 
 And, lilac generates a :ref:`Makefile <makefile>` to manage blog.
 
@@ -35,7 +35,7 @@ Now, what to do next is configuring our fresh blog.
 Configure your Blog
 -------------------
 
-The configuration is dead minimal, let's take a look at the `config.toml`::
+The configuration is dead minimal, let's take a look at the ``config.toml``::
 
     root_path = ""
 
@@ -67,7 +67,7 @@ To learn more about configuration, see also :ref:`configuration <config>`.
 Choose a Theme
 ---------------
 
-Don't like the classic theme? Go to :ref:`the theme list <theme_list>` to choose one.
+Don't like the built-in theme? Go to :ref:`the theme list <theme_list>` to choose one.
 
 Just clone the theme repo down, for example, the theme `less <https://github.com/hit9/lilac-theme-less>`_::
 
@@ -82,7 +82,7 @@ See :ref:`themes <themes>` to learn more.
 Create a New Post
 -----------------
 
-Each time your start with a new post, you need to touch a new file under directory `src/post`:
+Each time your start with a new post, you need to touch a new file under directory ``src/post``:
 
 .. code-block:: bash
 
@@ -122,7 +122,7 @@ Each time writing a new post, you just do these steps:
 
 2. run lilac's server.
 
-3. touch a new file under `src/post/` and then start writing.
+3. touch a new file under ``src/post/`` and then start writing.
 
 4. see results in browser after doing a save.
 

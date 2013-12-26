@@ -1,3 +1,6 @@
 [submodule "lilac/resources/less"]
 	path = lilac/resources/less
 	url = git://github.com/hit9/lilac-theme-less.git
+[submodule "docs/_themes/rux"]
+	path = docs/_themes/rux
+	url = git://github.com/hit9/sphinx-theme-rux.git

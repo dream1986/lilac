@@ -90,7 +90,7 @@ You may want to see the :ref:`Quick Start <quickstart>` part now.
 Installation trouble?
 ---------------------
 
-If you meet problems similar to this: `Cann't find Python.h`, try to install Python development libraries.
+If you meet problems similar to this: ``Cann't find Python.h``, try to install Python development libraries.
 
 
 If your're using Ubuntu, install it via:

@@ -9,17 +9,17 @@ Overview
 There are only a few items to configure. A minimal configuration is::
 
     root_path = ""
-    
+
     [blog]
     name = "Make Difference"
     description = "Here goes your blog's description"
     url = "http://your-blog.org"
     theme = "classic"
-    
+
     [author]
     name = "me"
     email = "me@some.com"
-    
+
     [disqus]
     shortname = "your-disqus-short-name"
 
@@ -43,7 +43,7 @@ you should set `root_path` to `"/myblog"`::
     root_path = "/myblog"
 
 
-But note that: when in localhost, your site will run regardless of `root_path`,
+But **note** that: when in localhost(``lilac serve``), your site will run regardless of `root_path`,
 so you must run `lilac build` before deploying this site to remote server.
 
 Blog & Author
@@ -51,10 +51,10 @@ Blog & Author
 
 It's easy enough to configure these by yourself.
 
-Notes you need to know:
+Notes should know:
 
-- the item `url` in section `blog` is only used in feed generation.
-- better to set `author` 's `email` to your Gravatar's email.
+- the item ``url`` in section ``blog`` is only used in feed generation.
+- better to set ``author`` 's ``email`` to your Gravatar's email.
 
 Disqus
 -------
@@ -73,4 +73,7 @@ Theme Vars
 This section configure your theme. We configure theme's variables in config.toml instead of
 `your_theme/theme.toml` so that we can use theme as a standalone repo(or submodule).
 
-What to configure depends on your theme.
+What to configure depends on your theme::
+
+    [theme.vars]
+    github = 'my-github-username'

@@ -48,14 +48,14 @@ Show version::
 Depoly
 ------
 
-To deploy a new blog in new-created directory::
+To deploy a new blog in a new-created directory::
 
-    $ lilac deploy
+    ~/myblog/ $ lilac deploy
 
 Build
 -----
 
-To build site from source to htmls, lilac will be honest to `config.toml`::
+To build site from source to htmls, lilac will always be honest to `config.toml`::
 
     $ lilac build
 
@@ -91,7 +91,7 @@ To watch source changes the same time when the cute web server running::
 
 When you save your writings, lilac can detect the changes and start rebuilding.
 
-Note: the preview serve will run the site from root the regardless of config `root_path`.
+**Note**: the preview server will run the site from root ``""`` regardless of the configuration item ``root_path``.
 
 .. _ililac:
 
@@ -111,4 +111,4 @@ to stop the daemon::
 
 With this tool, we can write blog with at most one shell session.
 
-Note: ililac is included into lilac in version 0.3.7
+**Note**: ililac was included into lilac in version 0.3.7
