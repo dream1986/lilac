@@ -92,6 +92,27 @@ When you save your writings, lilac can detect the changes and start rebuilding.
 
 **Note**: the preview server will run the site from root ``""`` regardless of the configuration item ``root_path``.
 
+Daemon
+------
+
+To start lilac's http server and file monitor as a daemon running in the
+background, it will serve the blog at ``0.0.0.0:8888`` and start auto rebuilding once
+source files changed::
+
+    $ lilac start
+
+To stop it::
+
+    $ lilac stop
+
+To get its status::
+
+    $ lilac status
+
+To restart it::
+
+    $ lilac restart
+
 .. _ililac:
 
 ililac
