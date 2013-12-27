@@ -129,18 +129,18 @@ Each time writing a new post, you just do these steps:
 But, from v0.3.7,  we have built-in tool :ref:`ililac <ililac>`,  and writing
 becomes more easy:
 
-Use ililac
+Use Deamon
 ----------
 
-:ref:`ililac <ililac>` runs lilac's server and rebuilder in the background,
+We can run lilac's server and rebuilder in the background,
 each time we start writing, just::
 
     $ cd myblog
-    $ ililac start
+    $ lilac start
 
 remember to stop the daemon when finish writing::
 
-    $ ililac stop
+    $ lilac stop
 
 We just need at most one shell session to blog.
 

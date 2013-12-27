@@ -98,6 +98,9 @@ When you save your writings, lilac can detect the changes and start rebuilding.
 ililac
 ------
 
+**NOTE: ililac was removed in version 0.3.9, use `lilac start` and `lilac stop`
+instead**
+
 ililac is a tool to run lilac's server and rebuilder in the background.
 
 ::

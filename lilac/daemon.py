@@ -1,3 +1,6 @@
+#coding=utf8
+
+
 '''
     ***
     Modified generic daemon class
@@ -25,8 +28,10 @@ import os
 import sys
 import time
 import signal
+import logging
 
-from lilac.logger import logger
+from .server import server
+from .logger import logger
 
 
 class Daemon(object):
@@ -210,3 +215,14 @@ class Daemon(object):
         You should override this method when you subclass Daemon. It will be called after the process has been
         daemonized by start() or restart().
         """
+
+
+class LilacDaemon(Daemon):
+
+    def run(self):
+        logger.setLevel(logging.ERROR)
+        server.run(True, 8888)
+        logger.setLevel(logging.INFO)
+
+
+lilac_daemon = LilacDaemon("/tmp/lilac-daemon.pid", stdout="/dev/stdout")

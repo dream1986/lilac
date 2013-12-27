@@ -1,6 +1,8 @@
 v0.3.9
 -------
 
+- **Removed ililac**, use `lilac start|stop|status|restart` instead
+
 - update built-in theme `less`
 - add one more demo link
 - typofixed in documentation

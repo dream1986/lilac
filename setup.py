@@ -17,7 +17,6 @@ setup(
     entry_points={
         'console_scripts': [
             'lilac = lilac.cli:main',
-            'ililac = lilac.ililac:main'
         ]
     },
     install_requires=open("requirements.pip").read().splitlines(),

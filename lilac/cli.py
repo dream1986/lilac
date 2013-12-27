@@ -11,7 +11,7 @@ from .logger import logger
 from .server import server
 from . import version
 from .generator import generator
-from .ililac import lilac_daemon
+from .daemon import lilac_daemon
 from subprocess import call
 from docopt import docopt
 
@@ -77,10 +77,7 @@ Commands:
   start         start http server and auto rebuilding as a daemon running in the background
   stop          stop the http server and auto rebuilding daemon
   restart       restart http server and auto rebuilding daemon
-  status        report the status of the daemon
-
-Tools:(will miss in the future)
-  ililac        run lilac's server and rebuilder as a daemon running in the background"""
+  status        report the status of the daemon"""
 
     arguments = docopt(main.__doc__, version='lilac version: ' + version)
     # set logger's level to info
