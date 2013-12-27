@@ -1,5 +1,6 @@
 include LICENSE-MIT README.md requirements.pip
 recursive-include lilac/resources *
+recursive-include lilac/ililac *.py
 recursive-exclude docs *.pyc
 recursive-exclude docs *.pyo
 recursive-exclude lilac .*.swp

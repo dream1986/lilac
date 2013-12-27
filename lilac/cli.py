@@ -11,6 +11,7 @@ from .logger import logger
 from .server import server
 from . import version
 from .generator import generator
+from .ililac import lilac_daemon
 from subprocess import call
 from docopt import docopt
 
@@ -57,11 +58,10 @@ def clean():
 
 def main():
     """Usage:
-  lilac [-h|-v]
-  lilac build
-  lilac deploy
-  lilac clean
   lilac serve [<port>] [--watch]
+  lilac (deploy|build|clean)
+  lilac (start|stop|status|restart)
+  lilac [-h|-v]
 
 Options:
   -h --help     show this help message
@@ -74,8 +74,12 @@ Commands:
   build         build source files to htmls
   clean         remove files built by lilac
   serve         start a web server, as a option, start watching
+  start         start http server and auto rebuilding as a daemon running in the background
+  stop          stop the http server and auto rebuilding daemon
+  restart       restart http server and auto rebuilding daemon
+  status        report the status of the daemon
 
-Tools:
+Tools:(will miss in the future)
   ililac        run lilac's server and rebuilder as a daemon running in the background"""
 
     arguments = docopt(main.__doc__, version='lilac version: ' + version)
@@ -102,6 +106,13 @@ Tools:
                 sys.exit(1)
 
         server.run(arguments["--watch"], port)
-
+    elif arguments["start"]:
+        lilac_daemon.start()
+    elif arguments["stop"]:
+        lilac_daemon.stop()
+    elif arguments["restart"]:
+        lilac_daemon.restart()
+    elif arguments["status"]:
+        lilac_daemon.status()
     else:
         exit(main.__doc__)
