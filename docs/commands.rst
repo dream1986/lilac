@@ -10,29 +10,28 @@ Overview
 
 All command line usage::
 
-   Usage:
-     lilac [-h|-v]
-     lilac build
-     lilac deploy
-     lilac clean
-     lilac serve [<port>] [--watch]
-
-   Options:
-     -h --help     show this help message
-     -v --version  show version
-     --watch       watch source files for changes
-     <port>        which port for server to use(default: 8888)
-
-   Commands:
-     deploy        deploy blog in current directory
-     build         build source files to htmls
-     clean         remove files built by lilac
-     serve         start a web server, as a option, start watching
-
-   Tools:
-     ililac        run lilac's server and rebuilder as a daemon running in the background
-
-
+    Usage:
+      lilac serve [<port>] [--watch]
+      lilac (deploy|build|clean)
+      lilac (start|stop|status|restart)
+      lilac [-h|-v]
+    
+    Options:
+      -h --help     show this help message
+      -v --version  show version
+      --watch       watch source files for changes
+      <port>        which port for server to use(default: 8888)
+    
+    Commands:
+      deploy        deploy blog in current directory
+      build         build source files to htmls
+      clean         remove files built by lilac
+      serve         start a web server, as a option, start watching
+      start         start http server and auto rebuilding as a daemon running in the background
+      stop          stop the http server and auto rebuilding daemon
+      restart       restart http server and auto rebuilding daemon
+      status        report the status of the daemon
+    
 
 Options
 -------
@@ -98,20 +97,4 @@ When you save your writings, lilac can detect the changes and start rebuilding.
 ililac
 ------
 
-**NOTE: ililac was removed in version 0.3.9, use `lilac start` and `lilac stop`
-instead**
-
-ililac is a tool to run lilac's server and rebuilder in the background.
-
-::
-
-    $ cd myblog
-    $ ililac start
-
-to stop the daemon::
-
-    $ ililac stop
-
-With this tool, we can write blog with at most one shell session.
-
-**Note**: ililac was included into lilac in version 0.3.7
+ililac was removed in version 0.3.9, use ``lilac start|stop|restart|status|`` instead.
