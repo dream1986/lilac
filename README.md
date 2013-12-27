@@ -92,6 +92,14 @@ To watch source changes the same time when the cute web server running:
 
 When you save your writings, lilac can detect the changes and start rebuilding.
 
+To run lilac's server and rebuilder in the background:
+
+    $ lilac start
+
+We can write blog with at most one shell session.
+
+**NOTE: ililac was remove in version 0.3.9, use `lilac start|stop instead`**
+
 Themes
 ------
 
@@ -109,28 +117,10 @@ But it's 100% ok to use themes not in the submodule way.
 Theme list:
 
 - [classic](https://github.com/hit9/lilac-theme-classic) -  by @hit9
-- [less](https://github.com/hit9/lilac-theme-less) - a clean theme for lilac. by @hit9 (now it's the default theme)
+- [less](https://github.com/hit9/lilac-theme-less) - a clean theme for lilac. by @hit9 (built-in theme)
 - [pure](https://github.com/kshiftlv/lilac-theme-pure) - a clean theme for lilac by @kshiftlv
 
 Have you made one? Please send a pull request on lila's repo, append yours to this list.
-
-Tools
--------
-
-- ililac - a tool to run lilac's server and rebuilder in the background(included in v0.3.7):
-
-  ```bash
-  $ cd myblog
-  $ ililac start
-  ```
-
-  to stop the daemon:
-
-  ```bash
-  $ ililac stop
-  ```
-
-  With this tool, we can write blog with at most one shell session.
 
 Documents
 ---------
