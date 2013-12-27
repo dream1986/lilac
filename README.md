@@ -98,7 +98,7 @@ To run lilac's server and rebuilder in the background:
 
 We can write blog with at most one shell session.
 
-**NOTE: ililac was remove in version 0.3.9, use `lilac start|stop instead`**
+**NOTE: ililac was removed in version 0.3.9, use `lilac start|stop instead`**
 
 Themes
 ------
