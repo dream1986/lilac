@@ -14,10 +14,10 @@ root_path = ""
 
 [blog]
 # What is your blog's name?
-name = "Make Difference"
+name = "Sunshine Every Day"
 
 # What is your blog about?
-description = "Here is your blog's description"
+description = "Never give up"
 
 # your blog's url(ends without '/'). This url is will only used
 # in feed generation. If you don't have one,  leave here blank.
@@ -27,13 +27,13 @@ url = "http://your-domain.org"
 theme = "less"
 
 [author]
-name = "me"
-email = "me@some.com"  # your email address
+name = "Hit9"
+email = "nz2324@126.com"  # your email address
 
 [disqus]
-# your disqus's short name for this blog
-shortname = "your-disqus-short-name"
+# your disqus's short name for this blog, leave blank to disable comments
+shortname = ""
 
-[theme]  # you can reset theme's default configuration here
-
+# theme section will reset configuration in `theme_path/theme.toml`
+[theme.vars]
 github = "hit9"  # theme requires your github username

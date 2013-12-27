@@ -19,17 +19,17 @@ class Config(object):
     default = {
         'root_path': '',
         'blog': {
-            'name': 'Blog\'s name',
-            'description': 'Blog\'s description',
+            'name': 'Sunshine Every Day',
+            'description': 'Never give up',
             'url': 'http://your-site.com',
             'theme': 'less'
         },
         'author': {
-            'name': 'me',
-            'email': 'me@some.com'
+            'name': 'hit9',
+            'email': 'nz2324@126.com'
         },
         'disqus': {
-            'shortname': 'your-disqus_short-name'
+            'shortname': ''  # empty to disable comment ability
         }
     }
 
