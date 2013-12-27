@@ -46,9 +46,6 @@ $ . venv/bin/activate
 $ pip install lilac
 ```
 
-Installation troubles:
-
-- cann't find Python.h. Solution: install `python-dev` package (on ubuntu: `sudo apt-get install python-dev`. There's no such issue on OSX)
 
 Sample Post
 -----------
@@ -128,6 +125,17 @@ Documents
 - English version: https://lilac.readthedocs.org/
 
 - 简体中文版本: https://lilac-zh.readthedocs.org
+
+Common Issues
+-------------
+
+- Installation troubles:
+
+   cann't find Python.h. Solution: install `python-dev` package (on ubuntu: `sudo apt-get install python-dev`. There's no such issue on OSX)
+
+- How to create a new post?
+
+   There's no command to do it, just `touch src/post/my-new-post.md`.
 
 Help Us
 -------
