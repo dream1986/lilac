@@ -5,7 +5,7 @@ Lilac is a MIT Licensed static blog generator, written in Python. It's fast, sim
 
 Latest version: v0.3.9
 
-Documentation is already on readthedocs: [English Version](https://lilac.readthedocs.org/), [简体中文版本](https://lilac-zh.readthedocs.org)
+Documentation is already on readthedocs: [English Version](http://lilac.readthedocs.org/), [简体中文版本](http://lilac-zh.readthedocs.org)
 
 News about lilac is here: http://lilac.hit9.org/
 
@@ -27,8 +27,6 @@ Demo Sites
 ----------
 
 - [Lilac News](http://lilac.hit9.org/), repo: https://github.com/hit9/lilac-website/tree/gh-pages
-
-- [Make Difference](http://lilac-less.hit9.org/), repo: https://github.com/hit9/lilac-theme-less/tree/gh-pages
 
 - [miles](http://mil3s.com/)
 
@@ -122,9 +120,9 @@ Have you made one? Please send a pull request on lila's repo, append yours to th
 Documents
 ---------
 
-- English version: https://lilac.readthedocs.org/
+- English version: http://lilac.readthedocs.org/
 
-- 简体中文版本: https://lilac-zh.readthedocs.org
+- 简体中文版本: http://lilac-zh.readthedocs.org
 
 Common Issues
 -------------
