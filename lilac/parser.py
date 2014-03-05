@@ -69,7 +69,8 @@ class Parser(object):
         extensions = (
             misaka.EXT_FENCED_CODE |
             misaka.EXT_NO_INTRA_EMPHASIS |
-            misaka.EXT_AUTOLINK
+            misaka.EXT_AUTOLINK |
+            misaka.EXT_TABLES
         )
 
         self.markdown = misaka.Markdown(render, extensions=extensions)
