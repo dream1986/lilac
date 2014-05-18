@@ -1,3 +1,7 @@
+Lilac is **Dead**, a better tool is rux: https://github.com/hit9/rux
+=====================================================================
+
+
 Lilac
 =====
 
